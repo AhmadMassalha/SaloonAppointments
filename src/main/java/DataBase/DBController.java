@@ -1,6 +1,7 @@
 package DataBase;
 import java.sql.*;
 import java.util.Vector;
+
 import Class.Program;
 public class DBController {
     private static DBController INSTANCE = null;
@@ -14,7 +15,8 @@ public class DBController {
             statement = connection.createStatement();
             System.out.println("DB LOADED");
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("No database connected, please connect any database");
+            //e.printStackTrace();
         }
     }
     public static DBController getInstance()//singleton object
