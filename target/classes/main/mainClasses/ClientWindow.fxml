@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #87CEEB;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ClientController">
+    <children>
+        <Button fx:id="appointmentButton" layoutX="74.0" layoutY="181.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="202.0" text="Make an appointment">
+            <font>
+                <Font name="Agency FB Bold" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="lookAtAppointmentButton" layoutX="74.0" layoutY="228.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="202.0" text="View appointments">
+            <font>
+                <Font name="Agency FB Bold" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="closeButton" layoutX="14.0" layoutY="356.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="51.0" text="close">
+            <font>
+                <Font name="Agency FB Bold" size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="pricesButton" layoutX="74.0" layoutY="135.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="202.0" text="Prices">
+            <font>
+                <Font name="Agency FB Bold" size="20.0" />
+            </font>
+        </Button>
+        <Label fx:id="titleOfWindow" layoutX="14.0" layoutY="6.0" text="Good to see you in our place">
+            <font>
+                <Font name="Harlow Solid Italic" size="30.0" />
+            </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6666666865348816" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04288499057292938" green="0.015594542026519775" blue="0.5614035129547119" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+        </Label>
+      <ListView fx:id="listView" layoutX="56.0" layoutY="91.0" prefHeight="218.0" prefWidth="237.0" visible="false" />
+      <Button fx:id="exitListButton" layoutX="56.0" layoutY="68.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="61.0" text="X" underline="true" visible="false">
+         <font>
+            <Font name="Agency FB" size="10.0" />
+         </font>
+      </Button>
+      <Label fx:id="deleteText" layoutX="12.0" layoutY="309.0" prefHeight="29.0" prefWidth="325.0" text="To remove an appointment, select it then press Delete" visible="false">
+         <font>
+            <Font name="Agency FB" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteAppt" layoutX="153.0" layoutY="344.0" mnemonicParsing="false" text="DELETE" underline="true" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="12.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
