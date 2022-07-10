@@ -1,14 +1,16 @@
 package DataBase;
 import java.sql.*;
 import java.util.Vector;
-
 import Class.Program;
+/*DB controller has all of the methods that are relevant to sending and getting database data
+  it's implemented as a singlton, so all of the instance are going to point to this object
+  if you download this code from somewhere, make sure to connect a data base to it or either it wont work*/
 public class DBController {
     private static DBController INSTANCE = null;
     private Connection connection;
     private Statement statement;
     private ResultSet resultSet;
-
+    
     private DBController() {
         try {
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/barbershop", "root", "123");
