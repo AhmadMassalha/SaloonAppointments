@@ -41,10 +41,11 @@ public class AppointmentController {
 
         @FXML
         private ListView<String> dayChoice;
-
+        /*day choice object is a vbox that we can choose an option from*/
         @FXML
         void initialize() {
-            dayChoice.getItems().addAll("Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday");
+            dayChoice.getItems().addAll("Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday"); //putting days in daychoice
+            //here i'n setting every mouse click to function as desired
             dayChoice.setOnMouseClicked(event ->{
                 System.out.println(dayChoice.getSelectionModel().getSelectedIndex());
                 timeChoice.getItems().clear();
